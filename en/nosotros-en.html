@@ -544,7 +544,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     </div>
     <div class="historia-text">
       <h3>Our Mission</h3>
-      <p>Huna Estudios was founded in Quito in 2021, when a multidisciplinary team noticed something clear: companies aren't looking for vendors — they're looking for partners who truly understand their story from the inside. With that mindset, we rethought the traditional agency model: we work close to our clients, as if we were on the same set. We bring a communications-first perspective with nods to production, scripting, editing, and storytelling, always focused on crafting narratives that connect across digital platforms.</p>
+      <p>Huna Estudios was founded in Quito in 2021, when a multidisciplinary team noticed something clear: companies aren't looking for vendors — they're looking for partners who truly understand their story from the inside. With that mindset, we rethought the traditional agency model: we work close to our clients, as if we were on the same set. We bring a communications-driven perspective with nods to production, scripting, editing, and storytelling, always focused on crafting narratives that connect across digital platforms.</p>
       <h3>Our Commitment</h3>
       <p>We constantly stay up to date so our decisions are always aligned with the latest trends in marketing and digital communications. We prioritize clarity and transparency throughout the process, rigor in execution, and ongoing support. We make sure every deliverable has both strategic and narrative intent.</p>
     </div>
@@ -815,11 +815,18 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     });
   });
 
-  // Header scroll
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 10);
-  });
+// Header scroll 
+function updateHeader() {
+  const header = document.querySelector('header');
+  if (window.scrollY > 10) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
 
+window.addEventListener('scroll', updateHeader);
+updateHeader(); //
   // Tap/click toggle para tarjetas en móvil/touch
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.service-card').forEach(function(card) {

@@ -321,7 +321,7 @@ nav a:hover { color: var(--red); }
 
 #showrunners { background: radial-gradient(ellipse at 20% 50%, #1a1a1a 0%, #0a0a0a 65%); padding: 90px 60px; }
 .showrunners-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-.showrunners-media { border-radius: var(--radius); overflow: hidden; background: #1a1a1a; aspect-ratio: 16 / 9; }
+.showrunners-media { border-radius: var(--radius); overflow: hidden; background: #1a1a1a; aspect-ratio: 16 / 9; line-height: 0; transform: translateZ(0); -webkit-clip-path: inset(0 round var(--radius)); clip-path: inset(0 round var(--radius)); }
 .media-placeholder { width: 100%; height: 100%; background: transparent; display: flex; align-items: center; justify-content: center; }
 .play-btn { width: 60px; height: 60px; border-radius: 50%; background: rgba(220, 220, 220, 0.4);; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s; box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2); }
 .play-btn:hover { transform: scale(1.08); }
@@ -399,23 +399,6 @@ nav a:hover { color: var(--red); }
   transition: color 0.38s ease;
 }
 .service-card:hover .service-num-bg { color: rgba(229,50,50,0.07); }
-
-/* Badge — top left */
-.service-badge {
-  position: absolute;
-  top: 16px; left: 16px;
-  z-index: 4;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--red);
-  background: rgba(229,50,50,0.12);
-  border: 1px solid rgba(229,50,50,0.3);
-  padding: 4px 9px;
-  border-radius: 3px;
-  backdrop-filter: blur(4px);
-}
 
 /* Content area */
 .service-body { position: absolute; bottom: 0; left: 0; right: 0; z-index: 5; padding: 20px 22px 22px; }
@@ -862,7 +845,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="assets/img/index/services/asesoria.webp" alt="Asesoría Particular" loading="lazy">
       <div class="service-num-bg">01</div>
-      <span class="service-badge">Estrategia</span>
       <div class="service-body">
         <div class="service-title">Asesoría Particular</div>
         <div class="service-meta">
@@ -883,7 +865,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="assets/img/index/services/redes-sociales.webp" alt="Redes Sociales" loading="lazy">
       <div class="service-num-bg">02</div>
-      <span class="service-badge">Community</span>
       <div class="service-body">
         <div class="service-title">Redes Sociales</div>
         <div class="service-meta">
@@ -904,7 +885,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="assets/img/index/services/fotografia.webp" alt="Fotografía Profesional" loading="lazy">
       <div class="service-num-bg">03</div>
-      <span class="service-badge">Producción</span>
       <div class="service-body">
         <div class="service-title">Fotografía Profesional</div>
         <div class="service-meta">
@@ -925,7 +905,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="assets/img/index/services/produccion-audiovisual.webp" alt="Producción Audiovisual" loading="lazy">
       <div class="service-num-bg">04</div>
-      <span class="service-badge">Audiovisual</span>
       <div class="service-body">
         <div class="service-title">Producción Audiovisual</div>
         <div class="service-meta">
@@ -946,7 +925,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="assets/img/index/services/branding.webp" alt="Branding" loading="lazy">
       <div class="service-num-bg">05</div>
-      <span class="service-badge">Identidad</span>
       <div class="service-body">
         <div class="service-title">Branding</div>
         <div class="service-meta">
@@ -967,7 +945,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="assets/img/index/services/pauta.webp" alt="Pauta Digital" loading="lazy">
       <div class="service-num-bg">06</div>
-      <span class="service-badge">Performance</span>
       <div class="service-body">
         <div class="service-title">Pauta Digital</div>
         <div class="service-meta">
@@ -1311,14 +1288,17 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
   });
   
   // Header scroll 
-  window.addEventListener('scroll', () => {
+  function updateHeader() {
     const header = document.querySelector('header');
     if (window.scrollY > 10) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
-  });
+  }
+
+  window.addEventListener('scroll', updateHeader);
+  updateHeader(); 
 
   //Video showrunners
   document.addEventListener("DOMContentLoaded", function () {

@@ -321,7 +321,7 @@ nav a:hover { color: var(--red); }
 
 #showrunners { background: radial-gradient(ellipse at 20% 50%, #1a1a1a 0%, #0a0a0a 65%); padding: 90px 60px; }
 .showrunners-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-.showrunners-media { border-radius: var(--radius); overflow: hidden; background: #1a1a1a; aspect-ratio: 16 / 9; }
+.showrunners-media { border-radius: var(--radius); overflow: hidden; background: #1a1a1a; aspect-ratio: 16 / 9; line-height: 0; transform: translateZ(0); -webkit-clip-path: inset(0 round var(--radius)); clip-path: inset(0 round var(--radius)); }
 .media-placeholder { width: 100%; height: 100%; background: transparent; display: flex; align-items: center; justify-content: center; }
 .play-btn { width: 60px; height: 60px; border-radius: 50%; background: rgba(220, 220, 220, 0.4);; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.2s; box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2); }
 .play-btn:hover { transform: scale(1.08); }
@@ -399,23 +399,6 @@ nav a:hover { color: var(--red); }
   transition: color 0.38s ease;
 }
 .service-card:hover .service-num-bg { color: rgba(229,50,50,0.07); }
-
-/* Badge — top left */
-.service-badge {
-  position: absolute;
-  top: 16px; left: 16px;
-  z-index: 4;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--red);
-  background: rgba(229,50,50,0.12);
-  border: 1px solid rgba(229,50,50,0.3);
-  padding: 4px 9px;
-  border-radius: 3px;
-  backdrop-filter: blur(4px);
-}
 
 /* Content area */
 .service-body { position: absolute; bottom: 0; left: 0; right: 0; z-index: 5; padding: 20px 22px 22px; }
@@ -773,7 +756,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <p class="hero-eyebrow">Marketing &amp; Communications</p>
     <h1 class="hero-title">Connect</h1>
     <p class="hero-subtitle">through communication.</p>
-    <p class="hero-desc">We build a UNIQUE narrative that MOVES your audience across digital channels.</p>
+    <p class="hero-desc">We build a UNIQUE narrative that MOVES your audience across digital and social channels.</p>
     <div class="hero-btns">
       <a href="#contacto" class="btn-primary">Schedule a Meeting</a>
       <a href="#proyectos" class="btn-outline">View Portfolio</a>
@@ -864,7 +847,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="../assets/img/index/services/asesoria.webp" alt="Private Consulting" loading="lazy">
       <div class="service-num-bg">01</div>
-      <span class="service-badge">Strategy</span>
       <div class="service-body">
         <div class="service-title">Private Consulting</div>
         <div class="service-meta">
@@ -885,7 +867,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="../assets/img/index/services/redes-sociales.webp" alt="Social Media" loading="lazy">
       <div class="service-num-bg">02</div>
-      <span class="service-badge">Community</span>
       <div class="service-body">
         <div class="service-title">Social Media</div>
         <div class="service-meta">
@@ -906,7 +887,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="../assets/img/index/services/fotografia.webp" alt="Professional Photography" loading="lazy">
       <div class="service-num-bg">03</div>
-      <span class="service-badge">Production</span>
       <div class="service-body">
         <div class="service-title">Professional Photography</div>
         <div class="service-meta">
@@ -927,7 +907,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="../assets/img/index/services/produccion-audiovisual.webp" alt="Video Production" loading="lazy">
       <div class="service-num-bg">04</div>
-      <span class="service-badge">Audiovisual</span>
       <div class="service-body">
         <div class="service-title">Video Production</div>
         <div class="service-meta">
@@ -948,7 +927,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="../assets/img/index/services/branding.webp" alt="Branding" loading="lazy">
       <div class="service-num-bg">05</div>
-      <span class="service-badge">Identity</span>
       <div class="service-body">
         <div class="service-title">Branding</div>
         <div class="service-meta">
@@ -969,7 +947,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div class="service-card">
       <img class="service-img" src="../assets/img/index/services/pauta.webp" alt="Paid Advertising" loading="lazy">
       <div class="service-num-bg">06</div>
-      <span class="service-badge">Performance</span>
       <div class="service-body">
         <div class="service-title">Paid Advertising</div>
         <div class="service-meta">
@@ -1046,7 +1023,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <div>
       <div class="section-label">Strategic Partnership</div>
       <h2 class="section-title-lg" style="margin-bottom:18px">QF Producciones</h2>
-      <p class="qf-desc">Together with <strong style="color:var(--white)">QF Producciones</strong> we elevate every production to broadcast standards, with promotional expertise and full event coverage.</p>
+      <p class="qf-desc">Together with <strong style="color:var(--white)">QF Producciones</strong> we elevate every production to broadcast standards, with promotional expertise and full event coverage..</p>
       <ul class="qf-features">
         <li>Brand Launches <span>Support, promotional impact, and full event coverage.</span></li>
         <li>Event Coverage <span>Audiovisual production and same-day content for social media.</span></li>
@@ -1075,7 +1052,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
 <section id="testimonios">
   <div class="section-header">
     <div class="section-label">Testimonials</div>
-    <h2 class="section-title-lg">Users <span class="accent">Reviews</span></h2>
+    <h2 class="section-title-lg">User <span class="accent">Reviews</span></h2>
   </div>
   <div class="testimonial-slider">
     <div class="testimonial-track" id="testimonialTrack">
@@ -1312,15 +1289,18 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     });
   });
   
-  // Header scroll 
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 10) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
+// Header scroll 
+function updateHeader() {
+  const header = document.querySelector('header');
+  if (window.scrollY > 10) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', updateHeader);
+updateHeader(); //
 
   //Video showrunners
   document.addEventListener("DOMContentLoaded", function () {

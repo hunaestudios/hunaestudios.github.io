@@ -541,7 +541,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     </div>
     <div class="historia-text">
       <h3>Nuestra Misión</h3>
-      <p>Huna Estudios nació en Quito en 2021, cuando un equipo multidisciplinario detectó algo claro: las empresas no buscan solo proveedores, sino aliados que entiendan su historia desde dentro. Con esa mirada, replanteamos la forma tradicional de agencia: trabajamos cerca del cliente, como si estuviéramos en el "mismo set". Aplicamos una mirada comunicacional con guiños a la producción, guion, montaje y puesta en escena, siempre pensando en contar historias que conecten en plataformas digitales.</p>
+      <p>Huna Estudios nació en Quito en 2021, cuando un equipo multidisciplinario detectó algo claro: las empresas no buscan solo proveedores, sino aliados que entiendan su historia desde dentro. Con esa mirada, replanteamos la forma tradicional de agencia: trabajamos cerca del cliente, como si estuviéramos en el "mismo set". Aplicamos una visión comunicacional con guiños a la producción, guion, montaje y puesta en escena, siempre pensando en contar historias que conecten en plataformas digitales.</p>
       <h3>Nuestro Compromiso</h3>
       <p>Nos actualizamos constantemente para que nuestras decisiones estén alineadas con las tendencias del marketing y la comunicación digital. Priorizamos la claridad y la transparencia en el proceso, la rigurosidad en la ejecución y el acompañamiento continuo. Buscamos que cada entrega tenga sentido estratégico y narrativo.</p>
     </div>
@@ -690,7 +690,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
       </div>
       <div class="team-card-info">
         <div class="team-card-name">Cristian Alarcón</div>
-        <span class="team-card-role">CEO y Cofundador</span>
+        <span class="team-card-role">CEO y Co-fundador</span>
         <p class="team-card-desc">Lidera la visión y el crecimiento integral de tu empresa. Impulsa la innovación y asegura la excelencia en cada proyecto.</p>
         <div class="team-social">
           <a href="https://www.linkedin.com/in/crisitan-alarcon-57a447263/" target="_blank" rel="noopener nofollow" aria-label="LinkedIn de Cristian Alarcón"><i class="fab fa-linkedin-in"></i></a>
@@ -703,7 +703,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
       </div>
       <div class="team-card-info">
         <div class="team-card-name">Samuel Castellano</div>
-        <span class="team-card-role">CCO y Cofundador</span>
+        <span class="team-card-role">CCO y Co-fundador</span>
         <p class="team-card-desc">Construye y fortalece la relación con el cliente. Garantiza comunicación clara, alineación estratégica y trabajo colaborativo.</p>
         <div class="team-social">
           <a href="https://www.instagram.com/abner_samu/" target="_blank" rel="noopener nofollow" aria-label="Instagram de Samuel Castellano"><i class="fab fa-instagram"></i></a>
@@ -812,10 +812,18 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     });
   });
 
-  // Header scroll
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 10);
-  });
+// Header scroll 
+function updateHeader() {
+  const header = document.querySelector('header');
+  if (window.scrollY > 10) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', updateHeader);
+updateHeader(); //
 
   // Tap/click toggle para tarjetas en móvil/touch
   document.addEventListener('DOMContentLoaded', function() {

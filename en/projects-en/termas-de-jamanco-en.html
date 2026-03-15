@@ -460,9 +460,17 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     });
   });
 
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 10);
-  });
+function updateHeader() {
+  const header = document.querySelector('header');
+  if (window.scrollY > 10) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', updateHeader);
+updateHeader(); //
 </script>
 </body>
 </html>
