@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Huna Estudios - Agencia de Marketing y Comunicación</title>
+
+    <!-- Metas -->
+    <meta name="robots" content="index, follow, max-snippet:50, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Descubre los proyectos de marketing digital que han marcado la diferencia para nuestros clientes. Casos de éxito en fotografía, contenido, redes sociales y branding.">
+    <meta name="keywords" content="portafolio marketing digital, casos de éxito Ecuador, proyectos fotografía Quito, gestión redes sociales, branding empresas Ecuador">
+    <meta name="author" content="Huna Estudios">
+    <link rel="canonical" href="https://hunaestudios.github.io/portafolio.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hunaestudios.github.io/portafolio.html">
+    <meta property="og:title" content="Portafolio | Huna Estudios - Proyectos de Marketing Digital en Ecuador">
+    <meta property="og:description" content="Descubre los proyectos que han marcado la diferencia para nuestros clientes. Casos de éxito en fotografía, contenido, redes sociales y branding.">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/portafolio/portafolio-huna-estudios.webp">
+    <meta property="og:image:alt" content="Proyectos destacados de Huna Estudios - Agencia de Marketing">
+    <meta property="og:site_name" content="Huna Estudios">
+    <meta property="og:locale" content="es_EC">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portafolio | Huna Estudios - Casos de Éxito">
+    <meta name="twitter:description" content="Descubre los proyectos de marketing digital que han marcado la diferencia para nuestros clientes en Ecuador.">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/portafolio/portafolio-huna-estudios.webp">
+
+    <!-- Favicon y preloads -->
+    <link rel="icon" type="image/webp" href="assets/img/global/huna-estudios-favicon.webp">
+    <link rel="preload" href="assets/img/portafolio/covers/portafolio-huna-estudios.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Portafolio - Huna Estudios",
+        "description": "Casos de éxito y proyectos de marketing digital realizados por Huna Estudios para clientes en Ecuador",
+        "url": "https://hunaestudios.github.io/portafolio.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": 8,
+            "itemListOrder": "Descending",
+            "itemListElement": [
+                { "@type": "CreativeWork", "name": "Mundiflowers - Marketing 360", "genre": "Marketing 360" },
+                { "@type": "CreativeWork", "name": "Valentina's XV - Sesión Fotográfica", "genre": "Fotografía" },
+                { "@type": "CreativeWork", "name": "Buenavista Bread - Contenido Estratégico", "genre": "Creación de Contenido" },
+                { "@type": "CreativeWork", "name": "Termas de Jamanco - Marketing Digital", "genre": "Redes Sociales" },
+                { "@type": "CreativeWork", "name": "Libertadores de América - Gestión de Redes", "genre": "Redes Sociales" },
+                { "@type": "CreativeWork", "name": "UpWear - Branding y Creación de Marca", "genre": "Branding" },
+                { "@type": "CreativeWork", "name": "Unidad Educativa Verbo - Contenido Educativo", "genre": "Marketing 360" },
+                { "@type": "CreativeWork", "name": "Huna - QF Producciones", "genre": "Productora" }
+            ]
+        }
+    }
+    </script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #e53232;
+  --dark: #0a0a0a;
+  --card-bg: #161616;
+  --card-border: #2a2a2a;
+  --white: #ffffff;
+  --text-muted: #999999;
+  --num-bg: #e53232;
+  --font-title: 'Helvetica Neue', 'Arial Black', Arial, sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --radius: 8px;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--dark); color: var(--white); font-family: var(--font-body); overflow-x: hidden; line-height: 1.6; }
+
+/* ─── HEADER ─── */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 60px;
+  background: transparent;
+  transition: background 0.3s;
+}
+header.scrolled {
+  background: rgba(10, 10, 10, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.logo img { height: 21px; width: auto; display: block; }
+nav { display: flex; align-items: center; gap: 25px; }
+nav a {
+  font-family: var(--font-body); font-size: 11px; font-weight: 600;
+  color: var(--white); text-decoration: none; letter-spacing: 2px;
+  text-transform: uppercase; transition: color 0.2s;
+}
+nav a:hover { color: var(--red); }
+.btn-nav {
+  background: var(--red); color: var(--white) !important;
+  padding: 10px 22px; border-radius: var(--radius); font-weight: 700 !important;
+}
+.btn-nav:hover { background: #c42828 !important; }
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.lang-switcher a {
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.45) !important;
+  padding: 5px 9px !important;
+  text-decoration: none !important;
+  transition: all 0.2s !important;
+  line-height: 1 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.lang-switcher a:hover {
+  color: var(--white) !important;
+  background: rgba(255,255,255,0.08) !important;
+}
+.lang-switcher a.active {
+  color: var(--white) !important;
+  background: var(--red) !important;
+}
+.lang-switcher .lang-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none; flex-direction: column; gap: 6px; cursor: pointer;
+  width: 44px; height: 44px; align-items: center; justify-content: center;
+  padding: 8px; border-radius: 10px; -webkit-tap-highlight-color: transparent;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px; background: var(--white);
+  border-radius: 2px;
+  transition: transform 280ms cubic-bezier(.2,.8,.2,1), opacity 200ms, width 200ms;
+  transform-origin: center;
+}
+.hamburger span:nth-child(1) { transform-origin: left center; }
+.hamburger span:nth-child(3) { transform-origin: left center; }
+.hamburger.is-active span:nth-child(1) { transform: translateY(6px) rotate(45deg); width: 24px; }
+.hamburger.is-active span:nth-child(2) { opacity: 0; transform: translateX(-10px); width: 0; }
+.hamburger.is-active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); width: 24px; }
+.hamburger:focus { outline: 2px solid rgba(255,255,255,0.08); outline-offset: 2px; }
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed; top: 0; right: -100%; width: 100%; height: 100vh;
+  background: #111; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 36px;
+  transition: 0.4s ease; z-index: 200;
+}
+.mobile-menu a {
+  color: white; text-decoration: none; font-size: 18px; font-weight: 600;
+  letter-spacing: 3px; text-transform: uppercase; transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--red); }
+.mobile-menu a.btn-nav { background: none; padding: 0; font-size: 18px; color: white !important; }
+.mobile-menu.active { right: 0; }
+.mobile-menu-close {
+  position: absolute; top: 60px; right: 20px;
+  width: 44px; height: 44px; background: none; border: none;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  border-radius: 10px; -webkit-tap-highlight-color: transparent;
+}
+.mobile-menu-close span {
+  display: block; width: 24px; height: 2px; background: var(--white);
+  border-radius: 2px; position: absolute;
+}
+.mobile-menu-close span:nth-child(1) { transform: rotate(45deg); }
+.mobile-menu-close span:nth-child(2) { transform: rotate(-45deg); }
+
+/* ─── HERO ─── */
+#hero-portafolio {
+  position: relative; width: 100%; min-height: 70vh;
+  overflow: hidden; display: flex; align-items: flex-end;
+  padding-bottom: 80px;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('assets/img/portafolio/covers/portafolio-huna-estudios.webp');
+  background-size: cover; background-position: center;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.98) 100%);
+}
+.hero-content { position: relative; z-index: 2; padding: 0 60px; max-width: 860px; }
+.hero-eyebrow { font-size: 13px; font-weight: 600; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+.hero-title {
+  font-family: var(--font-title); font-size: clamp(70px, 9.5vw, 120px);
+  font-weight: 900; line-height: 0.88; text-transform: uppercase;
+  letter-spacing: -2px; color: var(--white); margin-bottom: 18px;
+}
+.hero-desc { font-size: 15.5px; color: rgba(255,255,255,0.72); line-height: 1.65; max-width: 520px; }
+
+/* ─── SHARED ─── */
+.section-label {
+  font-size: 11px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: 3px; text-transform: uppercase; padding-left: 12px;
+  border-left: 3px solid var(--red); margin-bottom: 10px; display: inline-block;
+}
+.section-title-lg {
+  font-family: var(--font-title); font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900; text-transform: uppercase; line-height: 0.95; letter-spacing: -0.5px;
+}
+.section-title-lg .accent { color: var(--red); }
+.section-desc { font-size: 15px; color: rgba(255,255,255,0.70); line-height: 1.65; max-width: 680px; margin-top: 14px; }
+.section-header { margin-bottom: 48px; }
+
+/* ─── FILTERS ─── */
+.portfolio-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 42px; }
+.filter-btn {
+  padding: 9px 18px; border-radius: var(--radius);
+  background: #111; border: 1px solid #1e1e1e;
+  color: var(--text-muted); font-family: var(--font-body);
+  font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; cursor: pointer; transition: all 0.2s;
+}
+.filter-btn:hover { color: var(--white); border-color: var(--card-border); }
+.filter-btn.active { background: var(--red); border-color: var(--red); color: var(--white); }
+
+/* ─── PORTFOLIO GRID ─── */
+#portafolio { background: #0e0e0e; padding: 90px 60px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+.portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; }
+
+.portfolio-item {
+  background: #111; border: 1px solid #1e1e1e; border-radius: var(--radius);
+  overflow: hidden; display: flex; flex-direction: column;
+  text-decoration: none; color: inherit;
+  transition: background 0.2s;
+}
+.portfolio-item:hover { background: #161616; }
+.portfolio-item.hidden { display: none; }
+
+.portfolio-item-image {
+  aspect-ratio: 16/9; overflow: hidden;
+  background: #1a1a1a; position: relative;
+}
+.portfolio-item-image img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.5s ease;
+}
+.portfolio-item:hover .portfolio-item-image img { transform: scale(1.04); }
+
+.portfolio-item-category {
+  position: absolute; top: 14px; left: 14px;
+  background: var(--red); color: var(--white);
+  font-size: 9px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; padding: 5px 10px;
+  border-radius: var(--radius);
+}
+
+.portfolio-item-info { padding: 26px 28px; flex: 1; display: flex; flex-direction: column; }
+
+.portfolio-item-name {
+  font-family: var(--font-title); font-size: 22px; font-weight: 900;
+  text-transform: uppercase; color: var(--white); margin-bottom: 8px; line-height: 1.1;
+}
+.portfolio-item-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 18px; flex: 1; }
+
+.portfolio-item-stats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.portfolio-stat {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--text-muted);
+  background: #0e0e0e; border: 1px solid #1e1e1e;
+  padding: 5px 10px; border-radius: var(--radius);
+}
+.portfolio-stat i { color: var(--red); font-size: 10px; }
+
+.portfolio-item-link {
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--red);
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: gap 0.2s;
+}
+.portfolio-item:hover .portfolio-item-link { gap: 10px; }
+
+/* ─── CTA ─── */
+#cta-portafolio {
+  background: #000; padding: 100px 60px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+.cta-title {
+  font-family: var(--font-title); font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900; text-transform: uppercase; line-height: 0.92;
+  letter-spacing: -0.5px; margin-bottom: 18px;
+}
+.cta-title .accent { color: var(--red); }
+.cta-desc { font-size: 15.5px; color: rgba(255,255,255,0.65); max-width: 480px; margin: 0 auto 34px; line-height: 1.65; }
+.btn-primary {
+  background: var(--red); color: var(--white); padding: 13px 26px;
+  border-radius: var(--radius); border: 2px solid var(--red);
+  font-family: var(--font-body); font-size: 12px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer;
+  text-decoration: none; transition: all 0.2s; display: inline-block;
+}
+.btn-primary:hover { background: #c42828; border-color: #c42828; }
+
+footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size: 13px; color: #666; letter-spacing: 0.5px; border-top: 1px solid #e5e5e5; }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  header { padding: 16px 24px; }
+  nav { display: none; }
+  .hamburger { display: flex; }
+
+  #hero-portafolio { min-height: 56vh; padding-bottom: 52px; }
+  .hero-content { padding: 0 24px; }
+  .hero-title { font-size: clamp(54px, 16vw, 80px); }
+
+  #portafolio, #cta-portafolio { padding: 60px 24px; }
+  footer { padding: 20px 24px; }
+
+  .lang-switcher { margin-right: 8px; }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="mainHeader">
+  <a href="index.html" class="logo">
+    <img src="assets/img/global/logo-huna-1.webp" alt="Huna Estudios" loading="eager">
+  </a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="portafolio.html">Portafolio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="planes.html" class="btn-nav">Planes</a>
+    <div class="lang-switcher">
+      <a href="portafolio.html" class="active">ES</a>
+      <span class="lang-sep"></span>
+      <a href="en/portafolio-en.html">EN</a>
+    </div>    
+  </nav> 
+  <div class="hamburger" id="hamburger" aria-label="Abrir menú" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu"></div>
+
+<!-- HERO -->
+<section id="hero-portafolio">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">PORTAFOLIO</h1>
+    <p class="hero-desc">Mira el showreel de proyectos con nuestros clientes.</p>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="portafolio">
+  <div class="section-header">
+    <span class="section-label">Casos de Éxito</span>
+    <h2 class="section-title-lg">NUESTROS<span class="accent"> TRABAJOS</span></h2>
+    <p class="section-desc">Una selección de contenido multimedia que reflejan nuestro trabajo en comunicación, contenido y marketing.</p>
+  </div>
+
+  <!-- Filtros -->
+  <div class="portfolio-filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="fotografia">Fotografía</button>
+    <button class="filter-btn" data-filter="contenido">Creación de Contenido</button>
+    <button class="filter-btn" data-filter="marketing360">Marketing 360</button>
+    <button class="filter-btn" data-filter="branding">Branding</button>
+    <button class="filter-btn" data-filter="productora">Productora</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="portfolio-grid">
+
+    <!-- Proyecto 1: Mundiflowers -->
+    <a href="projects/mundiflowers.html" class="portfolio-item" data-category="marketing360">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/mundiflowers-potafolio.webp" alt="Empresa de venta de flores B2B en Arizona - Proyecto Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Marketing 360</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Mundiflowers</div>
+        <p class="portfolio-item-desc">Estrategia de marketing digital para aumentar la presencia y venta a través de su página web y redes sociales.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> Diciembre 2025</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-globe"></i> +500 visitas</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-dollar-sign"></i> +80k unidades vendidas</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 2: QF Producciones -->
+    <a href="projects/qfhuna.html" class="portfolio-item" data-category="productora">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/qfproducciones.webp" alt="QF Producciones y Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Productora</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Huna — QF Producciones</div>
+        <p class="portfolio-item-desc">Servicio de broadcast para proyectos a gran escala y medios de comunicación.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-handshake"></i> Asociación</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-building"></i> +10 proyectos</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-camera"></i> +150 horas de rodaje</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 3: Buenavista Bread -->
+    <a href="projects/buenavista-bread.html" class="portfolio-item" data-category="contenido">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/comiendo-buenavista.webp" alt="Creación de contenido estratégico para Buenavista Bread - Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Creación de Contenido</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Buenavista Bread</div>
+        <p class="portfolio-item-desc">Gestión de redes sociales, apalancado en un proyecto fotográfico y de video para un restaurante de alta cocina.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> Mayo 2025</span>
+          <span class="portfolio-stat"><i class="far fa-heart"></i> +150k engagement</span>
+          <span class="portfolio-stat"><i class="far fa-user"></i> +1,36k seguidores</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 4: Fotos FEF + Conmebol -->
+    <a href="projects/fotografia-deportiva.html" class="portfolio-item" data-category="fotografia">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/fotografia-deportiva.webp" alt="Sesión de fotografía profesional para XV años de Valentina - Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Fotografía</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Fotografía Deportiva</div>
+        <p class="portfolio-item-desc">Captura de expresiones y emociones en eventos deportivos de la Liga PRO y Eliminatorias Sudamericanas Conmebol.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> 2025</span>
+          <span class="portfolio-stat"><i class="far fa-image"></i> 40+ fotos</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-video"></i> Cobertura multimedia</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 5: Termas de Jamanco -->
+    <a href="projects/termas-de-jamanco.html" class="portfolio-item" data-category="contenido">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/Terjamanco-bote.webp" alt="Gestión integral de redes sociales para Terjamanco - Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Redes Sociales</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Termas de Jamanco</div>
+        <p class="portfolio-item-desc">Proyecto integral de marketing digital, estrategia y pautaje, para un complejo turístico de Termas en Papallacta.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> Septiembre 2024</span>
+          <span class="portfolio-stat"><i class="far fa-user"></i> +14k seguidores</span>
+          <span class="portfolio-stat"><i class="far fa-bookmark"></i> +40% reservas</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 6: Libertadores de América -->
+    <a href="projects/libertadores-de-america.html" class="portfolio-item" data-category="contenido">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/libertadores-portafolio-1.webp" alt="Gestión de redes sociales para Libertadores de América - Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Redes Sociales</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Libertadores de América</div>
+        <p class="portfolio-item-desc">Manejo de redes sociales y diseño publicitario para el mejor Complejo Deportivo de fútbol 7 de Quito.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> Mayo 2025</span>
+          <span class="portfolio-stat"><i class="far fa-bookmark"></i> +40 eventos</span>
+          <span class="portfolio-stat"><i class="far fa-chart-bar"></i> Alto alcance orgánico</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 7: UpWear -->
+    <a href="projects/upwear.html" class="portfolio-item" data-category="branding">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/upwear-portafolio.webp" alt="Branding y creación de marca para UpWear - Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Branding</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">UpWear</div>
+        <p class="portfolio-item-desc">Branding y creación de marca desde cero, priorizando la fotografía para una nueva marca de ropa importada a Ecuador.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> Octubre 2025</span>
+          <span class="portfolio-stat"><i class="far fa-star"></i> 4,85/5 satisfacción</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-dollar-sign"></i> +50 ventas</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Proyecto 8: Unidad Educativa Verbo -->
+    <a href="projects/ue-verbo.html" class="portfolio-item" data-category="marketing360">
+      <div class="portfolio-item-image">
+        <img src="assets/img/portafolio/covers/verbo-portafolio.webp" alt="Estrategia de contenido educativo para Colegio Verbo - Huna Estudios" loading="lazy">
+        <span class="portfolio-item-category">Marketing 360</span>
+      </div>
+      <div class="portfolio-item-info">
+        <div class="portfolio-item-name">Unidad Educativa Verbo</div>
+        <p class="portfolio-item-desc">Manejo de redes sociales y trafficker para admisiones de una Unidad Educativa Cristiana de altos valores.</p>
+        <div class="portfolio-item-stats">
+          <span class="portfolio-stat"><i class="far fa-calendar"></i> Febrero 2025</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-book"></i> Educación</span>
+          <span class="portfolio-stat"><i class="fa-solid fa-chalkboard-user"></i> +25% matrículas</span>
+        </div>
+        <span class="portfolio-item-link">Ver Proyecto <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-portafolio">
+  <h2 class="cta-title">¿LISTO PARA TRABAJAR<br><span class="accent">CON NOSOTROS?</span></h2>
+  <p class="cta-desc">Convierte tu visión en resultados con un equipo que se integra como parte de tu empresa.</p>
+  <a href="index.html#contacto" class="btn-primary">Iniciar Proyecto</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025-2026 Huna Estudios. Todos los derechos reservados.
+</footer>
+
+<!-- Whatsapp -->
+<a href="https://wa.me/593988414057?text=¡Hola!%20Quisiera%20saber%20más%20sobre%20sus%20servicios%20para%20elevar%20nuestra%20empresa." target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.168 1.522 5.941L.057 23.882a.5.5 0 0 0 .606.61l6.094-1.597A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.878 9.878 0 0 1-5.031-1.376l-.36-.214-3.733.978.995-3.636-.235-.374A9.878 9.878 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/>
+  </svg>
+</a>
+
+<script>
+  // Hamburger
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const nav = document.querySelector('header nav');
+
+    if (!hamburger || !mobileMenu || !nav) return;
+
+    mobileMenu.innerHTML = `
+      <button class="mobile-menu-close" id="menuClose" aria-label="Cerrar menú">
+        <span></span>
+        <span></span>
+      </button>
+      ${nav.innerHTML}
+    `;
+
+    const closeBtn = document.getElementById('menuClose');
+    let menuAbierto = false;
+
+    function abrir() {
+      menuAbierto = true;
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrar() {
+      menuAbierto = false;
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      menuAbierto ? cerrar() : abrir();
+    });
+
+    closeBtn.addEventListener('click', cerrar);
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', cerrar);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') cerrar();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) cerrar();
+    });
+  });
+
+  // Header scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  // Filtros de portafolio
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          item.classList.toggle('hidden', filter !== 'all' && item.dataset.category !== filter);
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Verbo | Huna Estudios</title>
+    <meta name="robots" content="index, follow, max-snippet:50, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Manejo de redes sociales y trafficker para admisiones de una institución educativa cristiana en Quito.">
+    <meta name="author" content="Huna Estudios">
+    <link rel="canonical" href="https://hunaestudios.github.io/projects/ue-verbo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hunaestudios.github.io/projects/ue-verbo.html">
+    <meta property="og:title" content="Unidad Educativa Verbo | Huna Estudios - Caso de Estudio">
+    <meta property="og:description" content="Manejo de redes sociales y trafficker para admisiones de una institución educativa cristiana en Quito.">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/verbo-portafolio.webp">
+    <meta property="og:site_name" content="Huna Estudios">
+    <meta property="og:locale" content="es_EC">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unidad Educativa Verbo | Huna Estudios">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/verbo-portafolio.webp">
+    <link rel="icon" type="image/webp" href="../assets/img/global/huna-estudios-favicon.webp">
+    <link rel="preload" href="../assets/img/portafolio/covers/verbo-portafolio.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #e53232;
+  --dark: #0a0a0a;
+  --card-bg: #161616;
+  --card-border: #2a2a2a;
+  --white: #ffffff;
+  --text-muted: #999999;
+  --num-bg: #e53232;
+  --font-title: 'Helvetica Neue', 'Arial Black', Arial, sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --radius: 8px;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--dark); color: var(--white); font-family: var(--font-body); overflow-x: hidden; line-height: 1.6; }
+
+/* ─── HEADER ─── */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 60px; background: transparent; transition: background 0.3s;
+}
+header.scrolled {
+  background: rgba(10,10,10,0.82); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.logo img { height: 21px; width: auto; display: block; }
+nav { display: flex; align-items: center; gap: 25px; }
+nav a { font-family: var(--font-body); font-size: 11px; font-weight: 600; color: var(--white); text-decoration: none; letter-spacing: 2px; text-transform: uppercase; transition: color 0.2s; }
+nav a:hover { color: var(--red); }
+.btn-nav { background: var(--red); color: var(--white) !important; padding: 10px 22px; border-radius: var(--radius); font-weight: 700 !important; }
+.btn-nav:hover { background: #c42828 !important; }
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.lang-switcher a {
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.45) !important;
+  padding: 5px 9px !important;
+  text-decoration: none !important;
+  transition: all 0.2s !important;
+  line-height: 1 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.lang-switcher a:hover {
+  color: var(--white) !important;
+  background: rgba(255,255,255,0.08) !important;
+}
+.lang-switcher a.active {
+  color: var(--white) !important;
+  background: var(--red) !important;
+}
+.lang-switcher .lang-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+}
+
+/* Hamburger */
+.hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; width: 44px; height: 44px; align-items: center; justify-content: center; padding: 8px; border-radius: 10px; -webkit-tap-highlight-color: transparent; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 280ms cubic-bezier(.2,.8,.2,1), opacity 200ms, width 200ms; transform-origin: center; }
+.hamburger span:nth-child(1) { transform-origin: left center; }
+.hamburger span:nth-child(3) { transform-origin: left center; }
+.hamburger.is-active span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.is-active span:nth-child(2) { opacity: 0; transform: translateX(-10px); width: 0; }
+.hamburger.is-active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.hamburger:focus { outline: 2px solid rgba(255,255,255,0.08); outline-offset: 2px; }
+
+/* Mobile menu */
+.mobile-menu { position: fixed; top: 0; right: -100%; width: 100%; height: 100vh; background: #111; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px; transition: 0.4s ease; z-index: 200; }
+.mobile-menu a { color: white; text-decoration: none; font-size: 18px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; transition: color 0.2s; }
+.mobile-menu a:hover { color: var(--red); }
+.mobile-menu a.btn-nav { background: none; padding: 0; font-size: 18px; color: white !important; }
+.mobile-menu.active { right: 0; }
+.mobile-menu-close { position: absolute; top: 60px; right: 20px; width: 44px; height: 44px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 10px; -webkit-tap-highlight-color: transparent; }
+.mobile-menu-close span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; position: absolute; }
+.mobile-menu-close span:nth-child(1) { transform: rotate(45deg); }
+.mobile-menu-close span:nth-child(2) { transform: rotate(-45deg); }
+
+/* ─── HERO ─── */
+#hero-project { position: relative; width: 100%; min-height: 80vh; overflow: hidden; display: flex; align-items: flex-end; padding-bottom: 80px; }
+.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.98) 100%); }
+.hero-content { position: relative; z-index: 2; padding: 0 60px; max-width: 900px; }
+.hero-tag { font-size: 9px; font-weight: 700; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; display: inline-block; padding: 5px 12px; border: 1px solid rgba(229,50,50,0.4); border-radius: var(--radius); }
+.hero-title { font-family: var(--font-title); font-size: clamp(54px, 7.5vw, 110px); font-weight: 900; line-height: 0.88; text-transform: uppercase; letter-spacing: -2px; color: var(--white); margin-bottom: 18px; }
+.hero-desc { font-size: 15.5px; color: rgba(255,255,255,0.72); line-height: 1.65; max-width: 540px; }
+
+/* ─── SHARED ─── */
+.section-label { font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 3px; text-transform: uppercase; padding-left: 12px; border-left: 3px solid var(--red); margin-bottom: 10px; display: inline-block; }
+.section-title-lg { font-family: var(--font-title); font-size: clamp(32px, 4vw, 52px); font-weight: 900; text-transform: uppercase; line-height: 0.95; letter-spacing: -0.5px; }
+.section-title-lg .accent { color: var(--red); }
+.section-desc { font-size: 15px; color: rgba(255,255,255,0.70); line-height: 1.65; max-width: 640px; margin-top: 14px; }
+.section-header { margin-bottom: 48px; }
+
+/* ─── STATS ─── */
+#stats-project { background: #000; padding: 56px 60px; border-top: 1px solid rgba(255,255,255,0.06); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
+.stat-card { background: #111; border: 1px solid #1e1e1e; border-radius: var(--radius); padding: 32px 28px; text-align: center; transition: background 0.2s; }
+.stat-card:hover { background: #161616; }
+.stat-number { font-family: var(--font-title); font-size: 42px; font-weight: 900; color: var(--red); line-height: 1; margin-bottom: 6px; display: block; letter-spacing: -1px; }
+.stat-label { font-size: 12px; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.stat-sublabel { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+/* ─── CONTEXT ─── */
+#contexto { background: radial-gradient(ellipse at 20% 50%, #1a1a1a 0%, #0a0a0a 65%); padding: 90px 60px; }
+.context-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.context-text h3 { font-family: var(--font-title); font-size: 16px; font-weight: 900; text-transform: uppercase; color: var(--white); letter-spacing: 0.5px; margin-bottom: 10px; margin-top: 28px; }
+.context-text h3:first-child { margin-top: 0; }
+.context-text p { font-size: 15px; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 14px; }
+.context-text ul { list-style: none; margin-top: 20px; }
+.context-text li { padding: 8px 0 8px 16px; border-left: 2px solid #2a2a2a; font-size: 14px; color: var(--text-muted); margin-bottom: 4px; }
+.context-text li strong { color: var(--white); }
+.context-img { border-radius: var(--radius); overflow: hidden; background: #1a1a1a; }
+.context-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.context-img:hover img { transform: scale(1.03); }
+
+/* ─── COVER ─── */
+#cover-project { position: relative; height: 60vh; overflow: hidden; }
+.cover-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.6s ease; }
+#cover-project:hover .cover-bg { transform: scale(1.02); }
+.cover-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, transparent 55%); }
+.cover-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 60px; }
+.cover-caption-title { font-family: var(--font-title); font-size: 22px; font-weight: 900; text-transform: uppercase; color: var(--white); margin-bottom: 6px; }
+.cover-caption-sub { font-size: 14px; color: rgba(255,255,255,0.65); }
+
+/* ─── RESULTS ─── */
+#resultados { background: #0e0e0e; padding: 90px 60px; border-top: 1px solid rgba(255,255,255,0.05); }
+.results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.result-card { background: #111; border: 1px solid #1e1e1e; border-radius: var(--radius); padding: 32px 28px; transition: background 0.2s; }
+.result-card:hover { background: #161616; }
+.result-card h4 { font-family: var(--font-title); font-size: 16px; font-weight: 900; text-transform: uppercase; color: var(--white); letter-spacing: 0.5px; margin-bottom: 10px; }
+.result-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+/* ─── GALLERY ─── */
+#galeria { background: radial-gradient(ellipse at 75% 50%, #1a1a1a 0%, #0a0a0a 65%); padding: 90px 60px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.gallery-item { position: relative; border-radius: var(--radius); overflow: hidden; background: #1a1a1a; aspect-ratio: 3/4; border: 1px solid #1e1e1e; }
+.gallery-item.video-item { aspect-ratio: 9/16; background: #000; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+.gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 16px 14px; background: linear-gradient(to top, rgba(10,10,10,0.9), transparent); font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.85); letter-spacing: 0.5px; text-transform: uppercase; opacity: 0; transition: opacity 0.25s; }
+.gallery-item:hover .gallery-caption { opacity: 1; }
+
+/* ─── QF PORTFOLIO GRID ─── */
+#proyectos-qf { background: #0e0e0e; padding: 90px 60px; border-top: 1px solid rgba(255,255,255,0.05); }
+.qf-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; }
+.qf-card { background: #111; border: 1px solid #1e1e1e; border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: background 0.2s; }
+.qf-card:hover { background: #161616; }
+.qf-card-img { aspect-ratio: 16/9; overflow: hidden; background: #1a1a1a; position: relative; }
+.qf-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.qf-card:hover .qf-card-img img { transform: scale(1.04); }
+.qf-card-tag { position: absolute; top: 14px; left: 14px; background: var(--red); color: var(--white); font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 10px; border-radius: var(--radius); }
+.qf-card-body { padding: 24px 26px; flex: 1; }
+.qf-card-name { font-family: var(--font-title); font-size: 19px; font-weight: 900; text-transform: uppercase; color: var(--white); margin-bottom: 8px; line-height: 1.1; }
+.qf-card-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
+.qf-card-stats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.qf-stat { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-muted); background: #0e0e0e; border: 1px solid #1e1e1e; padding: 5px 10px; border-radius: var(--radius); }
+.qf-stat i { color: var(--red); font-size: 10px; }
+.qf-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+.qf-tag { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); background: #0e0e0e; border: 1px solid #1e1e1e; padding: 4px 8px; border-radius: var(--radius); }
+.qf-link { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+.qf-card:hover .qf-link { gap: 10px; }
+
+/* ─── PHOTO GALLERY (upwear/valentina) ─── */
+#galeria-fotos { background: #0e0e0e; padding: 90px 60px; }
+.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.photo-item { position: relative; border-radius: var(--radius); overflow: hidden; background: #1a1a1a; border: 1px solid #1e1e1e; }
+.photo-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.photo-item:hover img { transform: scale(1.04); }
+.photo-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px 14px 12px; background: linear-gradient(to top, rgba(10,10,10,0.88), transparent); font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.85); letter-spacing: 1px; text-transform: uppercase; opacity: 0; transition: opacity 0.25s; }
+.photo-item:hover .photo-caption { opacity: 1; }
+
+/* ─── CTA ─── */
+#cta-project { background: #000; padding: 100px 60px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+.cta-title { font-family: var(--font-title); font-size: clamp(36px, 5vw, 64px); font-weight: 900; text-transform: uppercase; line-height: 0.92; letter-spacing: -0.5px; margin-bottom: 18px; }
+.cta-title .accent { color: var(--red); }
+.cta-desc { font-size: 15.5px; color: rgba(255,255,255,0.65); max-width: 480px; margin: 0 auto 34px; line-height: 1.65; }
+.btn-primary { background: var(--red); color: var(--white); padding: 13px 26px; border-radius: var(--radius); border: 2px solid var(--red); font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: all 0.2s; display: inline-block; }
+.btn-primary:hover { background: #c42828; border-color: #c42828; }
+
+/* ─── FOOTER ─── */
+footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size: 13px; color: #666; letter-spacing: 0.5px; border-top: 1px solid #e5e5e5; }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1100px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .results-grid { grid-template-columns: repeat(2, 1fr); }
+  .qf-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  header { padding: 16px 24px; }
+  nav { display: none; }
+  .hamburger { display: flex; }
+  #hero-project { min-height: 64vh; padding-bottom: 48px; }
+  .hero-content { padding: 0 24px; }
+  .hero-title { font-size: clamp(44px, 14vw, 72px); }
+  #stats-project, #contexto, #cover-project+*, #resultados, #galeria, #galeria-fotos, #proyectos-qf, #cta-project { padding: 60px 24px; }
+  .context-grid { grid-template-columns: 1fr; gap: 32px; }
+  .gallery-grid, .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  .results-grid { grid-template-columns: 1fr; }
+  .cover-caption { padding: 28px 24px; }
+  footer { padding: 18px 24px; }
+  .lang-switcher { margin-right: 8px; }
+}
+@media (max-width: 480px) {
+  .gallery-grid, .photo-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .whatsapp-float { width: 48px; height: 48px; bottom: 16px; right: 16px; }
+}
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header id="mainHeader">
+  <a href="../index.html" class="logo">
+    <img src="../assets/img/global/logo-huna-1.webp" alt="Huna Estudios" loading="eager">
+  </a>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../portafolio.html">Portafolio</a>
+    <a href="../nosotros.html">Nosotros</a>
+    <a href="../planes.html" class="btn-nav">Planes</a>
+    <div class="lang-switcher">
+      <a href="projects/ue-verbo.html" class="active">ES</a>
+      <span class="lang-sep"></span>
+      <a href="../en/projects-en/ue-verbo-en.html">EN</a>
+    </div> 
+  </nav>
+  <div class="hamburger" id="hamburger" aria-label="Abrir menú" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu"></div>
+
+<section id="hero-project">
+  <div class="hero-bg" style="background-image: url('../assets/img/portafolio/covers/verbo-portafolio.webp');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">Marketing 360</span>
+    <h1 class="hero-title">UE VERBO</h1>
+    <p class="hero-desc">Manejo de redes sociales y trafficker para admisiones de una Unidad Educativa Cristiana de altos valores.</p>
+  </div>
+</section>
+
+<section id="stats-project">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-number">+190k</span>
+      <div class="stat-label">Engagement</div>
+      <div class="stat-sublabel">Medida acumulada en todas sus redes sociales activas</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">4,01%</span>
+      <div class="stat-label">Engagement · TikTok</div>
+      <div class="stat-sublabel">Interacción con el contenido respecto al total de visualizaciones orgánicas</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">3,22%</span>
+      <div class="stat-label">Engagement · Instagram</div>
+      <div class="stat-sublabel">Tasa promedio de interacción generada por publicaciones y reels</div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">+25%</span>
+      <div class="stat-label">Matrículas</div>
+      <div class="stat-sublabel">Incremento en inscripciones tras la campaña de admisiones</div>
+    </div>
+  </div>
+</section>
+
+<section id="contexto">
+  <div class="section-header">
+    <span class="section-label">El Cliente</span>
+    <h2 class="section-title-lg">EDUCACIÓN Y<span class='accent'> VALORES</span></h2>
+  </div>
+  <div class="context-grid">
+    <div class="context-text">
+      <h3>Contexto y Desafío</h3>
+      <p>Nuestro cliente con una amplia trayectoria enfrentaba dos desafíos: reflejar mediante el contenido visual atributos como educación, espiritualidad y liderazgo; y construir una línea gráfica para estandarizar los contenidos audiovisuales.</p>
+      <p>El objetivo principal era fidelizar a su audiencia o llegar a un nuevo público interesado en los servicios de la marca, potenciando las matrículas mediante una estrategia de trafficker dirigida.</p>
+      <ul><li><strong>Sector:</strong> Servicio educativo</li><li><strong>Duración del Proyecto:</strong> 10 meses · actualidad</li><li><strong>Alcance:</strong> Redes Sociales</li></ul>
+    </div>
+    <div class="context-img">
+      <img src="../assets/img/portafolio/ue-verbo/quien-es-ue-verbo.webp" alt="Unidad Educativa Verbo" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="cover-project">
+  <div class="cover-bg" style="background-image: url('../assets/img/portafolio/ue-verbo/background-ue-verbo.webp');"></div>
+  <div class="cover-overlay"></div>
+  <div class="cover-caption">
+    <div class="cover-caption-title">Formación Espiritual</div>
+    <div class="cover-caption-sub">Contenido que refleja los valores y la propuesta educativa de la institución.</div>
+  </div>
+</section>
+
+<section id="resultados">
+  <div class="section-header">
+    <span class="section-label">Impacto</span>
+    <h2 class="section-title-lg">RESULTADOS<span class='accent'> OBTENIDOS</span></h2>
+    <p class="section-desc">Resultados obtenidos sobre el alcance de la campaña.</p>
+  </div>
+  <div class="results-grid">
+    <div class="result-card">
+      <h4>Comunicación Institucional</h4>
+      <p>Mejor difusión de actividades académicas y formativas fortaleciendo la imagen institucional del colegio.</p>
+    </div>
+    <div class="result-card">
+      <h4>Vinculación Comunitaria</h4>
+      <p>Mayor participación de padres, estudiantes y docentes en contenidos relacionados a eventos escolares.</p>
+    </div>
+    <div class="result-card">
+      <h4>Identidad Educativa</h4>
+      <p>Refuerzo de valores y propuesta educativa mediante una comunicación alineada a su enfoque formativo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="section-header">
+    <span class="section-label">Portafolio</span>
+    <h2 class="section-title-lg">PIEZAS<span class="accent"> DESTACADAS</span></h2>
+    <p class="section-desc">Selección de trabajos visuales más impactantes de la campaña.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="../assets/img/portafolio/ue-verbo/ue-verbo-1.webp" alt="Presentación de los niños" loading="lazy">
+      <div class="gallery-caption">Presentación de los niños</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/img/portafolio/ue-verbo/ue-verbo-2.webp" alt="Matrículas abiertas" loading="lazy">
+      <div class="gallery-caption">Matrículas abiertas</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/img/portafolio/ue-verbo/ue-verbo-3.webp" alt="Devocionales" loading="lazy">
+      <div class="gallery-caption">Devocionales</div>
+    </div>
+    <div class="gallery-item video-item">
+      <iframe src="https://www.youtube.com/embed/trI9DhhGM4A" title="Pasantes Americanas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="gallery-caption">Pasantes Americanas</div>
+    </div>
+    <div class="gallery-item video-item">
+      <iframe src="https://www.youtube.com/embed/xLb4JgQr6iU" title="Concurso de oratoria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="gallery-caption">Concurso de oratoria</div>
+    </div>
+    <div class="gallery-item video-item">
+      <iframe src="https://www.youtube.com/embed/WwmzQz0kDcA" title="Matrículas Verbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="gallery-caption">Matrículas Verbo</div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-project">
+  <h2 class="cta-title">¿LISTO PARA TRABAJAR<br><span class="accent">CON NOSOTROS?</span></h2>
+  <p class="cta-desc">Convierte tu visión en resultados con un equipo que se integra como parte de tu empresa.</p>
+  <a href="../index.html#contacto" class="btn-primary">Iniciar Proyecto</a>
+</section>
+
+<footer>© 2025-2026 Huna Estudios. Todos los derechos reservados.</footer>
+
+<!-- Whatsapp -->
+<a href="https://wa.me/593988414057?text=¡Hola!%20Quisiera%20saber%20más%20sobre%20sus%20servicios%20para%20elevar%20nuestra%20empresa." target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.168 1.522 5.941L.057 23.882a.5.5 0 0 0 .606.61l6.094-1.597A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.878 9.878 0 0 1-5.031-1.376l-.36-.214-3.733.978.995-3.636-.235-.374A9.878 9.878 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/>
+  </svg>
+</a>
+
+<script>
+  // Hamburger
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const nav = document.querySelector('header nav');
+
+    if (!hamburger || !mobileMenu || !nav) return;
+
+    mobileMenu.innerHTML = `
+      <button class="mobile-menu-close" id="menuClose" aria-label="Cerrar menú">
+        <span></span>
+        <span></span>
+      </button>
+      ${nav.innerHTML}
+    `;
+
+    const closeBtn = document.getElementById('menuClose');
+    let menuAbierto = false;
+
+    function abrir() {
+      menuAbierto = true;
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrar() {
+      menuAbierto = false;
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      menuAbierto ? cerrar() : abrir();
+    });
+
+    closeBtn.addEventListener('click', cerrar);
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', cerrar);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') cerrar();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) cerrar();
+    });
+  });
+
+  // Header scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 10);
+  });
+</script>
+</body>
+</html>

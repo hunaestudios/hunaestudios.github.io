@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ── ESPAÑOL (raíz) ── -->
+  <url>
+    <loc>https://hunaestudios.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/index-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/portafolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/portafolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/portafolio-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/nosotros.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/nosotros.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/nosotros-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/planes.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/planes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/planes-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── PROYECTOS ES ── -->
+  <url>
+    <loc>https://hunaestudios.github.io/projects/mundiflowers.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/mundiflowers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/mundiflowers-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/buenavista-bread.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/buenavista-bread.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/buenavista-bread-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/fotografia-deportiva.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/fotografia-deportiva.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/fotografia-deportiva-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/libertadores-de-america.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/libertadores-de-america.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/libertadores-de-america-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/termas-de-jamanco.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/termas-de-jamanco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/termas-de-jamanco-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/upwear.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/upwear.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/upwear-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/ue-verbo.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/ue-verbo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/ue-verbo-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/projects/qfhuna.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/qfhuna.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/qfhuna-en.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── INGLÉS (en/) ── -->
+  <url>
+    <loc>https://hunaestudios.github.io/en/index-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/index-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/portafolio-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/portafolio-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/portafolio.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/nosotros-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/nosotros-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/nosotros.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/planes-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/planes-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/planes.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── PROYECTOS EN ── -->
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/mundiflowers-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/mundiflowers-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/mundiflowers.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/buenavista-bread-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/buenavista-bread-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/buenavista-bread.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/fotografia-deportiva-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/fotografia-deportiva-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/fotografia-deportiva.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/libertadores-de-america-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/libertadores-de-america-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/libertadores-de-america.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/termas-de-jamanco-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/termas-de-jamanco-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/termas-de-jamanco.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/upwear-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/upwear-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/upwear.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/ue-verbo-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/ue-verbo-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/ue-verbo.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hunaestudios.github.io/en/projects-en/qfhuna-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hunaestudios.github.io/en/projects-en/qfhuna-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hunaestudios.github.io/projects/qfhuna.html"/>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

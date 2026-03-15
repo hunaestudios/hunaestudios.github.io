@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Huna Estudios - Marketing and Communications Agency</title>
+
+    <!-- Metas -->
+    <meta name="robots" content="index, follow, max-snippet:50, max-image-preview:large, max-video-preview:-1">
+    <meta name="description" content="Meet Huna Estudios: a marketing agency that integrates with your team. Communication, social media, and digital strategy built for SMBs in Quito, Ecuador.">
+    <meta name="keywords" content="communications agency Quito, integrated marketing Ecuador, external marketing team, SMB strategy, digital brand management">
+    <meta name="author" content="Huna Estudios">
+    <link rel="canonical" href="https://hunaestudios.github.io/nosotros.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hunaestudios.github.io/nosotros.html">
+    <meta property="og:title" content="About Us | Huna Estudios - Integrated Marketing Agency in Quito">
+    <meta property="og:description" content="Meet our team and working methodology. A marketing agency that integrates as part of your company to deliver real results.">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/sobre-nosotros/Integracion-Huna.webp">
+    <meta property="og:image:alt" content="Huna Estudios team working on marketing integration">
+    <meta property="og:site_name" content="Huna Estudios">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Huna Estudios - Marketing Agency">
+    <meta name="twitter:description" content="Meet our team and integrated working methodology for SMBs in Ecuador.">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/sobre-nosotros/Integracion-Huna.webp">
+
+    <!-- Favicon y preloads -->
+    <link rel="icon" type="image/webp" href="../assets/img/global/huna-estudios-favicon.webp">
+    <link rel="preload" href="../assets/img/sobre-nosotros/equipo-huna-estudios.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Us - Huna Estudios",
+        "description": "Meet our team and integrated digital marketing methodology for SMBs in Ecuador",
+        "url": "https://hunaestudios.github.io/nosotros.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Huna Estudios",
+            "description": "Digital marketing agency in Quito, Ecuador specialized in integrating with client teams",
+            "foundingDate": "2022",
+            "employees": "5-10",
+            "founder": [
+                { "@type": "Person", "name": "Cristian Alarcón", "jobTitle": "Co-Founder & Digital Strategist" },
+                { "@type": "Person", "name": "Samuel Castellano", "jobTitle": "Co-Founder & Public Relations" }
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Quito",
+                "addressRegion": "Pichincha",
+                "addressCountry": "EC"
+            }
+        }
+    }
+    </script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #e53232;
+  --dark: #0a0a0a;
+  --card-bg: #161616;
+  --card-border: #2a2a2a;
+  --white: #ffffff;
+  --text-muted: #999999;
+  --num-bg: #e53232;
+  --font-title: 'Helvetica Neue', 'Arial Black', Arial, sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --radius: 8px;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--dark); color: var(--white); font-family: var(--font-body); overflow-x: hidden; line-height: 1.6; }
+
+/* ─── HEADER ─── */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 60px;
+  background: transparent;
+  transition: background 0.3s;
+}
+header.scrolled {
+  background: rgba(10, 10, 10, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.logo img { height: 21px; width: auto; display: block; }
+nav { display: flex; align-items: center; gap: 25px; }
+nav a {
+  font-family: var(--font-body); font-size: 11px; font-weight: 600;
+  color: var(--white); text-decoration: none; letter-spacing: 2px;
+  text-transform: uppercase; transition: color 0.2s;
+}
+nav a:hover { color: var(--red); }
+.btn-nav {
+  background: var(--red); color: var(--white) !important;
+  padding: 10px 22px; border-radius: var(--radius); font-weight: 700 !important;
+}
+.btn-nav:hover { background: #c42828 !important; }
+
+/* Hamburger */
+.hamburger {
+  display: none; flex-direction: column; gap: 6px; cursor: pointer;
+  width: 44px; height: 44px; align-items: center; justify-content: center;
+  padding: 8px; border-radius: 10px; -webkit-tap-highlight-color: transparent;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px; background: var(--white);
+  border-radius: 2px;
+  transition: transform 280ms cubic-bezier(.2,.8,.2,1), opacity 200ms, width 200ms;
+  transform-origin: center;
+}
+.hamburger span:nth-child(1) { transform-origin: left center; }
+.hamburger span:nth-child(3) { transform-origin: left center; }
+.hamburger.is-active span:nth-child(1) { transform: translateY(6px) rotate(45deg); width: 24px; }
+.hamburger.is-active span:nth-child(2) { opacity: 0; transform: translateX(-10px); width: 0; }
+.hamburger.is-active span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); width: 24px; }
+.hamburger:focus { outline: 2px solid rgba(255,255,255,0.08); outline-offset: 2px; }
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed; top: 0; right: -100%; width: 100%; height: 100vh;
+  background: #111; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 36px;
+  transition: 0.4s ease; z-index: 200;
+}
+.mobile-menu a {
+  color: white; text-decoration: none; font-size: 18px; font-weight: 600;
+  letter-spacing: 3px; text-transform: uppercase; transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--red); }
+.mobile-menu a.btn-nav { background: none; padding: 0; font-size: 18px; color: white !important; }
+.mobile-menu.active { right: 0; }
+.mobile-menu-close {
+  position: absolute; top: 60px; right: 20px;
+  width: 44px; height: 44px; background: none; border: none;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  border-radius: 10px; -webkit-tap-highlight-color: transparent;
+}
+.mobile-menu-close span {
+  display: block; width: 24px; height: 2px; background: var(--white);
+  border-radius: 2px; position: absolute;
+}
+.mobile-menu-close span:nth-child(1) { transform: rotate(45deg); }
+.mobile-menu-close span:nth-child(2) { transform: rotate(-45deg); }
+
+/* ─── HERO ─── */
+#hero-nosotros {
+  position: relative; width: 100%; min-height: 70vh;
+  overflow: hidden; display: flex; align-items: flex-end;
+  padding-bottom: 80px;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('../assets/img/sobre-nosotros/equipo-huna-estudios.webp');
+  background-size: cover; background-position: center top;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.98) 100%);
+}
+.hero-content { position: relative; z-index: 2; padding: 0 60px; max-width: 860px; }
+.hero-eyebrow { font-size: 13px; font-weight: 600; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; }
+.hero-title {
+  font-family: var(--font-title); font-size: clamp(70px, 9.5vw, 120px);
+  font-weight: 900; line-height: 0.88; text-transform: uppercase;
+  letter-spacing: -2px; color: var(--white); margin-bottom: 18px;
+}
+.hero-desc { font-size: 15.5px; color: rgba(255,255,255,0.72); line-height: 1.65; max-width: 520px; }
+
+/* ─── SHARED SECTION ELEMENTS ─── */
+.section-label {
+  font-size: 11px; font-weight: 700; color: var(--text-muted);
+  letter-spacing: 3px; text-transform: uppercase; padding-left: 12px;
+  border-left: 3px solid var(--red); margin-bottom: 10px; display: inline-block;
+}
+.section-title-lg {
+  font-family: var(--font-title); font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900; text-transform: uppercase; line-height: 0.95; letter-spacing: -0.5px;
+}
+.section-title-lg .accent { color: var(--red); }
+.section-desc { font-size: 15px; color: rgba(255,255,255,0.70); line-height: 1.65; max-width: 600px; margin-top: 14px; }
+.section-header { margin-bottom: 48px; }
+
+/* ─── HISTORIA ─── */
+#historia {
+  background: radial-gradient(ellipse at 20% 50%, #1a1a1a 0%, #0a0a0a 65%);
+  padding: 90px 60px;
+}
+.historia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.historia-img { border-radius: var(--radius); overflow: hidden; background: #1a1a1a; }
+.historia-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+.historia-img:hover img { transform: scale(1.03); }
+.historia-text h3 {
+  font-family: var(--font-title); font-size: 17px; font-weight: 900;
+  text-transform: uppercase; color: var(--white); letter-spacing: 0.5px;
+  margin-bottom: 10px; margin-top: 28px;
+}
+.historia-text h3:first-child { margin-top: 0; }
+.historia-text p { font-size: 15px; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 4px; }
+
+/* ─── VALORES ─── */
+#valores {
+  background: #080808;
+  padding: 90px 60px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ─── PROCESO ─── */
+#proceso {
+  background: #080808;
+  padding: 90px 60px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ─── SERVICE CARDS (Valores + Proceso) ─── */
+.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.service-card { position: relative; overflow: hidden; border-radius: 10px; aspect-ratio: 16 / 10; cursor: pointer; background: #111; transition: transform 1s cubic-bezier(.2,.8,.2,1), box-shadow 0.38s ease; isolation: isolate; }
+
+/* gradient per card — alternating red/dark */
+.service-card:nth-child(1) { background: linear-gradient(135deg, #1a0303 0%, #2c0808 40%, #0d0d0d 100%); }
+.service-card:nth-child(2) { background: linear-gradient(150deg, #0d0d0d 0%, #1a1a1a 50%, #0a0a0a 100%); }
+.service-card:nth-child(3) { background: linear-gradient(135deg, #200505 0%, #160303 45%, #0a0a0a 100%); }
+.service-card:nth-child(4) { background: linear-gradient(150deg, #111111 0%, #1c1c1c 50%, #080808 100%); }
+
+/* Noise grain texture overlay */
+.service-card::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Vignette gradient bottom */
+.service-card::after {
+  content: '';
+  position: absolute; inset: 0; z-index: 2;
+  background: linear-gradient(to top, rgba(0,0,0,0.96) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0.1) 100%);
+  transition: background 0.38s ease;
+}
+.service-card:hover::after {
+  background: linear-gradient(to top, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.2) 100%);
+}
+
+/* Big decorative number — background */
+.service-num-bg {
+  position: absolute;
+  top: -12px; right: -6px;
+  font-family: 'Bebas Neue', var(--font-title);
+  font-size: clamp(90px, 12vw, 140px);
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(255,255,255,0.04);
+  user-select: none;
+  z-index: 1;
+  letter-spacing: -4px;
+  transition: color 0.38s ease;
+}
+.service-card:hover .service-num-bg { color: rgba(229,50,50,0.07); }
+
+
+
+/* Content area */
+.service-body { position: absolute; bottom: 0; left: 0; right: 0; z-index: 5; padding: 20px 22px 22px; }
+
+.service-title {
+  font-family: 'Bebas Neue', var(--font-title);
+  font-size: clamp(20px, 2.4vw, 28px);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 0;
+  transition: color 0.2s;
+}
+
+.service-meta { display: flex; align-items: center; gap: 8px; margin-top: 6px; margin-bottom: 0; transition: margin-bottom 1s ease; }
+.service-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.35); }
+.service-tag-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+}
+
+.service-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.55;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1s cubic-bezier(.2,.8,.2,1), opacity 0.35s ease, margin-top 0.35s ease;
+  margin-top: 0;
+}
+
+/* Hover reveals */
+.service-card:hover { transform: translateY(-5px) scale(1.012); box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(229,50,50,0.15); }
+.service-card:hover .service-desc {
+  max-height: 80px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* Horizontal red line accent on hover */
+.service-line { position: absolute; bottom: 0; left: 0; height: 2px; width: 0; background: var(--red); z-index: 6; transition: width 0.4s cubic-bezier(.2,.8,.2,1); }
+.service-card:hover .service-line { width: 100%; }
+
+/* Active state for tap/click on touch devices */
+.service-card.active { transform: translateY(-5px) scale(1.012); box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(229,50,50,0.15); }
+.service-card.active::after { background: linear-gradient(to top, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.2) 100%); }
+.service-card.active .service-num-bg { color: rgba(229,50,50,0.07); }
+.service-card.active .service-desc { max-height: 80px; opacity: 1; margin-top: 10px; }
+.service-card.active .service-line { width: 100%; }
+
+/* ─── EQUIPO ─── */
+#equipo {
+  background: #0e0e0e;
+  padding: 90px 60px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
+.team-card {
+  background: #111; border: 1px solid #1e1e1e; border-radius: var(--radius);
+  overflow: hidden; transition: background 0.2s;
+}
+.team-card:hover { background: #161616; }
+.team-card-img { aspect-ratio: 1/1; overflow: hidden; background: #1a1a1a; }
+.team-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.team-card:hover .team-card-img img { transform: scale(1.04); }
+.team-card-info { padding: 22px 24px; }
+.team-card-name {
+  font-family: var(--font-title); font-size: 18px; font-weight: 900;
+  text-transform: uppercase; color: var(--white); margin-bottom: 4px; line-height: 1.1;
+}
+.team-card-role {
+  font-size: 11px; font-weight: 700; color: var(--red);
+  letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; display: block;
+}
+.team-card-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+.team-social { display: flex; gap: 8px; }
+.team-social a {
+  width: 34px; height: 34px; border: 1px solid var(--card-border);
+  border-radius: var(--radius); display: flex; align-items: center;
+  justify-content: center; color: var(--text-muted); font-size: 13px;
+  text-decoration: none; transition: all 0.2s;
+}
+.team-social a:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+
+/* ─── CTA ─── */
+#cta-nosotros {
+  background: #000;
+  padding: 100px 60px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+.cta-title {
+  font-family: var(--font-title); font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900; text-transform: uppercase; line-height: 0.92;
+  letter-spacing: -0.5px; margin-bottom: 18px;
+}
+.cta-title .accent { color: var(--red); }
+.cta-desc { font-size: 15.5px; color: rgba(255,255,255,0.65); max-width: 480px; margin: 0 auto 34px; line-height: 1.65; }
+.btn-primary {
+  background: var(--red); color: var(--white); padding: 13px 26px;
+  border-radius: var(--radius); border: 2px solid var(--red);
+  font-family: var(--font-body); font-size: 12px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer;
+  text-decoration: none; transition: all 0.2s; display: inline-block;
+}
+.btn-primary:hover { background: #c42828; border-color: #c42828; }
+
+footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size: 13px; color: #666; letter-spacing: 0.5px; border-top: 1px solid #e5e5e5; }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1100px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .service-card { aspect-ratio: 4/3; }
+}
+
+@media (max-width: 768px) {
+  header { padding: 16px 24px; }
+  nav { display: none; }
+  .hamburger { display: flex; }
+
+  #hero-nosotros { min-height: 56vh; padding-bottom: 52px; }
+  .hero-content { padding: 0 24px; }
+  .hero-title { font-size: clamp(54px, 16vw, 80px); }
+
+  #historia, #valores, #proceso, #equipo, #cta-nosotros { padding: 60px 24px; }
+  .historia-grid { grid-template-columns: 1fr; gap: 32px; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .service-card { aspect-ratio: 4/3; }
+  .service-title { font-size: clamp(16px, 4vw, 22px); }
+  .service-num-bg { font-size: clamp(70px, 18vw, 110px); }
+  .team-grid { grid-template-columns: 1fr; gap: 3px; }
+  footer { padding: 20px 24px; }
+}
+
+@media (max-width: 480px) {
+  .services-grid { grid-template-columns: 1fr; gap: 8px; }
+  .service-card { aspect-ratio: 16/9; }
+  .whatsapp-float { width: 48px; height: 48px; bottom: 16px; right: 16px; }
+}
+
+@media (max-width: 375px) {
+  .services-grid { grid-template-columns: 1fr; gap: 2px; }
+  .service-card { padding: 0; }
+}
+
+/* ── LANGUAGE SWITCHER ── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.lang-switcher a {
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.45) !important;
+  padding: 5px 9px !important;
+  text-decoration: none !important;
+  transition: all 0.2s !important;
+  line-height: 1 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.lang-switcher a:hover {
+  color: var(--white) !important;
+  background: rgba(255,255,255,0.08) !important;
+}
+.lang-switcher a.active {
+  color: var(--white) !important;
+  background: var(--red) !important;
+}
+.lang-switcher .lang-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .lang-switcher { margin-right: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="mainHeader">
+  <a href="index-en.html" class="logo">
+    <img src="../assets/img/global/logo-huna-1.webp" alt="Huna Estudios">
+  </a>  
+  <nav>
+    <a href="index-en.html">Home</a>
+    <a href="portafolio-en.html">Portfolio</a>
+    <a href="nosotros-en.html">About Us</a>
+    <a href="planes-en.html" class="btn-nav">Plans</a>
+    <div class="lang-switcher">
+      <a href="../nosotros.html">ES</a>
+      <span class="lang-sep"></span>
+      <a href="nosotros-en.html" class="active">EN</a>
+    </div>
+  </nav>
+  <div class="hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu"></div>
+
+<!-- HERO -->
+<section id="hero-nosotros">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">ABOUT US</h1>
+    <p class="hero-desc">Meet the story, values, and team behind Huna Estudios.</p>
+  </div>
+</section>
+
+<!-- HISTORIA -->
+<section id="historia">
+  <div class="section-header">
+    <span class="section-label">Our Story</span>
+    <h2 class="section-title-lg">BEHIND<span class="accent"> THE SCENES</span></h2>
+    <p class="section-desc">How Huna Estudios was born and what drives us every day.</p>
+  </div>
+  <div class="historia-grid">
+    <div class="historia-img">
+      <img src="../assets/img/sobre-nosotros/nosotros.webp" alt="Huna Estudios team collaborating on integrated marketing strategy" loading="lazy">
+    </div>
+    <div class="historia-text">
+      <h3>Our Mission</h3>
+      <p>Huna Estudios was founded in Quito in 2021, when a multidisciplinary team noticed something clear: companies aren't looking for vendors — they're looking for partners who truly understand their story from the inside. With that mindset, we rethought the traditional agency model: we work close to our clients, as if we were on the same set. We bring a communications-first perspective with nods to production, scripting, editing, and storytelling, always focused on crafting narratives that connect across digital platforms.</p>
+      <h3>Our Commitment</h3>
+      <p>We constantly stay up to date so our decisions are always aligned with the latest trends in marketing and digital communications. We prioritize clarity and transparency throughout the process, rigor in execution, and ongoing support. We make sure every deliverable has both strategic and narrative intent.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section id="valores">
+  <div class="section-header">
+    <span class="section-label">Our Values</span>
+    <h2 class="section-title-lg">CORE<span class="accent"> PRINCIPLES</span></h2>
+    <p class="section-desc">The principles that guide our work and our relationship with every client.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-num-bg">01</div>
+      <div class="service-body">
+        <div class="service-title">Communication</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Strategy</span>
+          <span class="service-dot"></span>
+          <span class="service-tag-label">Dialogue</span>
+        </div>
+        <div class="service-desc">Your voice, your tone — every brand is unique. We're dedicated to conveying exactly who you are to your audience.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-num-bg">02</div>
+      <div class="service-body">
+        <div class="service-title">Integration</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Alliance</span>
+          <span class="service-dot"></span>
+          <span class="service-tag-label">Team</span>
+        </div>
+        <div class="service-desc">We work with you, fully aligned with your goals and contributing as a true extension of your team.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-num-bg">03</div>
+      <div class="service-body">
+        <div class="service-title">Commitment</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Results</span>
+          <span class="service-dot"></span>
+          <span class="service-tag-label">Dedication</span>
+        </div>
+        <div class="service-desc">Your goals are our goals. We show up, stay involved, and keep our focus locked on results.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-num-bg">04</div>
+      <div class="service-body">
+        <div class="service-title">Evolution</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Measurement</span>
+          <span class="service-dot"></span>
+          <span class="service-tag-label">Optimization</span>
+        </div>
+        <div class="service-desc">We're always improving. We test, measure, optimize, and raise the bar on every process — with intention.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <div class="section-header">
+    <span class="section-label">Our Process</span>
+    <h2 class="section-title-lg">HOW<span class="accent"> WE WORK</span></h2>
+    <p class="section-desc">How we get to creating the best content for our clients.</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-num-bg">01</div>
+      <div class="service-body">
+        <div class="service-title">Integration</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Step 1</span>
+        </div>
+        <div class="service-desc">We align with your team, learning what you do — we can serve your business goals from day one.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-num-bg">02</div>
+      <div class="service-body">
+        <div class="service-title">Co-Creation</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Step 2</span>
+        </div>
+        <div class="service-desc">We design strategies alongside your team, combining ideas, creativity, and vision to find solutions.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-num-bg">03</div>
+      <div class="service-body">
+        <div class="service-title">Execution</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Step 3</span>
+        </div>
+        <div class="service-desc">We communicate who you are with precision — a digital strategy that actually resonates with your audience.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-num-bg">04</div>
+      <div class="service-body">
+        <div class="service-title">Optimization</div>
+        <div class="service-meta">
+          <span class="service-tag-label">Step 4</span>
+        </div>
+        <div class="service-desc">We never stop improving. We refine strategies and optimize results to keep your brand growing over time.</div>
+      </div>
+      <div class="service-line"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo">
+  <div class="section-header">
+    <span class="section-label">Leadership</span>
+    <h2 class="section-title-lg">OUR<span class="accent"> TEAM</span></h2>
+    <p class="section-desc">The people behind your projects.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="../assets/img/sobre-nosotros/equipo/cristian.webp" alt="Cristian Alarcón - CEO Huna Estudios" loading="lazy">
+      </div>
+      <div class="team-card-info">
+        <div class="team-card-name">Cristian Alarcón</div>
+        <span class="team-card-role">CEO & Co-Founder</span>
+        <p class="team-card-desc">Leads the vision and overall growth of the agency. Drives innovation and ensures excellence across every project.</p>
+        <div class="team-social">
+          <a href="https://www.linkedin.com/in/crisitan-alarcon-57a447263/" target="_blank" rel="noopener nofollow" aria-label="Cristian Alarcón on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="../assets/img/sobre-nosotros/equipo/sam.webp" alt="Samuel Castellano - CCO Huna Estudios" loading="lazy">
+      </div>
+      <div class="team-card-info">
+        <div class="team-card-name">Samuel Castellano</div>
+        <span class="team-card-role">CCO & Co-Founder</span>
+        <p class="team-card-desc">Builds and strengthens client relationships. Ensures clear communication, strategic alignment, and true collaborative work.</p>
+        <div class="team-social">
+          <a href="https://www.instagram.com/abner_samu/" target="_blank" rel="noopener nofollow" aria-label="Samuel Castellano on Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="../assets/img/sobre-nosotros/equipo/kathy.webp" alt="Kathy Paucar - Social Media Manager Huna Estudios" loading="lazy">
+      </div>
+      <div class="team-card-info">
+        <div class="team-card-name">Kathy Paucar</div>
+        <span class="team-card-role">Social Media Manager</span>
+        <p class="team-card-desc">Content strategist and paid media specialist. Maximizes reach and ROI through campaigns built around qualified leads.</p>
+        <div class="team-social">
+          <a href="https://www.linkedin.com/in/katheryn-paucar-silva-37615526b/" target="_blank" rel="noopener nofollow" aria-label="Kathy Paucar on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="../assets/img/sobre-nosotros/equipo/nestor.webp" alt="Néstor Alarcón - CMO Huna Estudios" loading="lazy">
+      </div>
+      <div class="team-card-info">
+        <div class="team-card-name">Néstor Alarcón</div>
+        <span class="team-card-role">CMO</span>
+        <p class="team-card-desc">Maps the creative strategy for your brand. Coordinates strategic consistency to keep every effort aligned with your goals.</p>
+        <div class="team-social">
+          <a href="https://www.linkedin.com/in/nestoralarconroman/" target="_blank" rel="noopener nofollow" aria-label="Néstor Alarcón on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-nosotros">
+  <h2 class="cta-title">READY TO WORK<br><span class="accent">WITH US?</span></h2>
+  <p class="cta-desc">Turn your vision into results with a team that becomes part of your company.</p>
+  <a href="index-en.html#contacto" class="btn-primary">Contact Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025-2026 Huna Estudios. All rights reserved.
+</footer>
+
+<!-- Whatsapp -->
+<a href="https://wa.me/593988414057?text=Hi!%20I%27d%20like%20to%20learn%20more%20about%20your%20services%20to%20take%20our%20company%20to%20the%20next%20level." target="_blank" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.168 1.522 5.941L.057 23.882a.5.5 0 0 0 .606.61l6.094-1.597A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.878 9.878 0 0 1-5.031-1.376l-.36-.214-3.733.978.995-3.636-.235-.374A9.878 9.878 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/>
+  </svg>
+</a>
+
+<script>
+  // Hamburger
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const nav = document.querySelector('header nav');
+
+    if (!hamburger || !mobileMenu || !nav) return;
+
+    mobileMenu.innerHTML = `
+      <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">
+        <span></span>
+        <span></span>
+      </button>
+      ${nav.innerHTML}
+    `;
+
+    const closeBtn = document.getElementById('menuClose');
+    let menuAbierto = false;
+
+    function abrir() {
+      menuAbierto = true;
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrar() {
+      menuAbierto = false;
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      menuAbierto ? cerrar() : abrir();
+    });
+
+    closeBtn.addEventListener('click', cerrar);
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', cerrar);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') cerrar();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) cerrar();
+    });
+  });
+
+  // Header scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('mainHeader').classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  // Tap/click toggle para tarjetas en móvil/touch
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.service-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var isActive = this.classList.contains('active');
+        document.querySelectorAll('.service-card').forEach(function(c) {
+          c.classList.remove('active');
+        });
+        if (!isActive) this.classList.add('active');
+      });
+    });
+  });
+
+</script>
+</body>
+</html>
