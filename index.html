@@ -10,14 +10,14 @@
     <meta name="description" content="Agencia de marketing y comunicación para PYMES en Quito. Gestión de redes sociales, contenido y pauta publicitaria. Nos integramos como parte de tu equipo para resultados reales.">
     <meta name="keywords" content="agencia marketing pymes Quito, gestión redes sociales Ecuador, community manager, estrategia digital, creación de contenido, pauta digital, comunicación empresarial">
     <meta name="author" content="Huna Estudios">
-    <link rel="canonical" href="https://hunaestudios.github.io/">
+    <link rel="canonical" href="https://hunaestudios.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hunaestudios.github.io/">
+    <meta property="og:url" content="https://hunaestudios.com/">
     <meta property="og:title" content="Huna Estudios | Agencia de Marketing Integrado en Quito, Ecuador">
     <meta property="og:description" content="Agencia de marketing digital en Quito. Gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.">
-    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/global/Marketing-Huna-Estudios.webp">
+    <meta property="og:image" content="https://hunaestudios.com/assets/img/global/Marketing-Huna-Estudios.webp">
     <meta property="og:image:alt" content="Equipo de Huna Estudios trabajando en estrategias de marketing digital">
     <meta property="og:site_name" content="Huna Estudios">
     <meta property="og:locale" content="es_EC">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Huna Estudios | Agencia de Marketing Digital en Quito">
     <meta name="twitter:description" content="Agencia de marketing que se integra a tu equipo. Redes sociales, contenido y estrategia para PYMES en Ecuador.">
-    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/global/Marketing-Huna-Estudios.webp">
+    <meta name="twitter:image" content="https://hunaestudios.com/assets/img/global/Marketing-Huna-Estudios.webp">
 
     <!-- Favicon y preloads críticos -->
     <link rel="icon" type="image/webp" href="assets/img/global/huna-estudios-favicon.webp">
@@ -50,8 +50,8 @@
             "@context": "https://schema.org",
             "@type": "MarketingAgency",
             "name": "Huna Estudios",
-            "url": "https://hunaestudios.github.io/",
-            "logo": "https://hunaestudios.github.io/assets/img/global/logo-huna-1.webp",
+            "url": "https://hunaestudios.com/",
+            "logo": "https://hunaestudios.com/assets/img/global/logo-huna-1.webp",
             "description": "Agencia de marketing digital en Quito, Ecuador especializada en gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.",
             "address": {
                 "@type": "PostalAddress",
@@ -300,7 +300,8 @@ nav a:hover { color: var(--red); }
 #clientes { background: radial-gradient(ellipse at 25% 50%, #1e1e1e 0%, #0a0a0a 65%); padding: 52px 0; }
 .section-eyebrow-plain { font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 3px; text-transform: uppercase; text-align: center; margin-top: -10px; margin-bottom: 30px; }
 .marquee { display: flex; overflow: hidden; user-select: none; }
-.marquee__content { display: flex; justify-content: space-around; align-items: center; min-width: 100%; flex-shrink: 0; list-style: none; animation: marquee-scroll 25s linear infinite; gap: 10px;}
+.marquee__track { display: flex; width: max-content; animation: marquee-scroll 25s linear infinite; }
+.marquee__content { display: flex; justify-content: space-around; align-items: center; min-width: 100vw; list-style: none; gap: 10px; padding-right: 10px; }
 .client-logo {
   height: 80px;
   filter: grayscale(20%) brightness(100%);
@@ -312,7 +313,7 @@ nav a:hover { color: var(--red); }
   filter: none;
   opacity: 1;
 }
-@keyframes marquee-scroll { 0%   { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+@keyframes marquee-scroll { 0%   { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 .section-header { margin-bottom: 48px; }
 .section-label { font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 3px; text-transform: uppercase; padding-left: 12px; border-left: 3px solid var(--red); margin-bottom: 10px; display: inline-block; }
@@ -511,19 +512,27 @@ nav a:hover { color: var(--red); }
 .cta-text { font-family: var(--font-title); font-size: 15px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
 .cta-sub { font-size: 10px; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; margin-top: -8px; }
 
-#qf { background: #0e0e0e; padding: 90px 60px; border-top: 1px solid rgba(255,255,255,0.05); }
-.qf-grid { display: grid; grid-template-columns: 1fr auto; gap: 80px; align-items: center; }
-.qf-desc { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.65; margin-bottom: 28px; }
-.qf-features { list-style: none; margin-bottom: 34px; }
-.qf-features li { font-size: 16px; font-weight: 700; color: var(--white); padding: 14px 0 14px 18px; border-left: 3px solid var(--red); border-bottom: 1px solid rgba(255,255,255,0.06); line-height: 1.4; }
-.qf-features li:last-child { border-bottom: none; }
-.qf-features li span { display: block; font-size: 14px; font-weight: 400; color: var(--text-muted); margin-top: 2px; }
-.qf-btns { display: flex; gap: 12px; }
-.qf-badge { width: 190px; height: 190px; border-radius: 50%; border: 2px solid #2a2a2a; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; background: radial-gradient(circle, #1a1a1a, #0a0a0a); }
-.badge-small { font-size: 10px; letter-spacing: 3px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; }
-.badge-names { font-family: var(--font-title); font-size: 15px; font-weight: 900; text-transform: uppercase; color: var(--white); line-height: 1.25; }
-.badge-x { font-size: 22px; color: var(--red); font-weight: 900; margin: 4px 0; line-height: 1; }
-.badge-year { font-size: 10px; color: var(--text-muted); letter-spacing: 2px; margin-top: 6px; }
+#alianzas { background: #0e0e0e; padding: 90px 60px; border-top: 1px solid rgba(255,255,255,0.05); }
+.alliance-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.alliance-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 36px 30px; display: flex; flex-direction: column; transition: background 0.2s; }
+.alliance-card:hover { background: #1a1a1a; }
+.alliance-tag { font-size: 10px; font-weight: 700; color: var(--red); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; display: block; }
+.alliance-title { font-family: var(--font-title); font-size: 22px; font-weight: 900; text-transform: uppercase; color: var(--white); margin-bottom: 12px; line-height: 1.1; }
+.alliance-desc { font-size: 14.5px; color: rgba(255,255,255,0.72); line-height: 1.6; margin-bottom: 26px; flex: 1; }
+.alliance-btns { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.alliance-link { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--red); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+.alliance-link:hover { gap: 10px; }
+.alliance-link i { font-size: 11px; }
+.qf-badge { width: 150px; height: 150px; border-radius: 50%; border: 2px solid #2a2a2a; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 16px; background: radial-gradient(circle, #1a1a1a, #0a0a0a); margin: 18px auto 22px; }
+.alliance-logo-wrap { display: flex; align-items: center; justify-content: center; height: 151px; margin: 18px 0 22px; }
+.alliance-logo { max-height: 151px; max-width: 279px; object-fit: contain; }
+.badge-small { font-size: 9px; letter-spacing: 3px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px; }
+.badge-names { font-family: var(--font-title); font-size: 13px; font-weight: 900; text-transform: uppercase; color: var(--white); line-height: 1.25; }
+.badge-x { font-size: 18px; color: var(--red); font-weight: 900; margin: 3px 0; line-height: 1; }
+.badge-year { font-size: 9px; color: var(--text-muted); letter-spacing: 2px; margin-top: 5px; }
+@media (max-width: 900px) {
+  .alliance-grid { grid-template-columns: 1fr; gap: 14px; }
+}
 
 #testimonios { background: radial-gradient(ellipse at 25% 60%, #1a1a1a 0%, #0a0a0a 65%); padding: 90px 60px; }
 .testimonial-slider { overflow: hidden; position: relative; }
@@ -612,8 +621,6 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
   .hero-subtitle { font-size: clamp(16px, 2.2vw, 26px); white-space: normal; }
   .showrunners-grid { grid-template-columns: 1fr; gap: 36px; }
   .showrunners-media { max-width: 620px; }
-  .qf-grid { grid-template-columns: 1fr; gap: 44px; }
-  .qf-badge { margin: 0 auto; }
 }
 
 @media (max-width: 768px) {
@@ -642,10 +649,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
   .projects-row1 { grid-template-columns: repeat(2, 1fr); }
   .projects-row2 { grid-template-columns: 1fr; }
   .project-card.portafolio-cta { min-height: 160px; }
-  .qf-features li { font-size: 13px; padding-left: 14px; }
-  .qf-features li span { font-size: 12px; }
-  .qf-btns { flex-direction: column; gap: 10px; }
-  .qf-btns .btn-primary, .qf-btns .btn-outline { text-align: center; min-height: 48px; }
+  .alliance-btns { flex-direction: column; align-items: stretch; gap: 10px; }
   .testimonial-card { grid-template-columns: 1fr; padding: 30px 26px; gap: 24px; }
   .testi-right { display: flex; justify-content: center; order: -1; }
   .testimonial-photo, .photo-placeholder { width: 100px; height: 100px; }
@@ -687,7 +691,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
   .section-title-lg { font-size: clamp(24px, 8vw, 36px); }
   .contact-title { font-size: clamp(26px, 9vw, 36px); }
   .panel p { font-size: 13px; }
-  .qf-desc { font-size: 14px; }
+  .alliance-desc { font-size: 14px; }
   .whatsapp-float { width: 48px; height: 48px; bottom: 16px; right: 16px; }
 }
 
@@ -730,6 +734,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
     <a href="index.html">Inicio</a>
     <a href="portafolio.html">Portafolio</a>
     <a href="nosotros.html">Nosotros</a>
+    <a href="social.html">Social</a>
     <a href="planes.html" class="btn-nav">Planes</a>
     <div class="lang-switcher">
       <a href="index.html" class="active">ES</a>
@@ -775,7 +780,7 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
   </div>
   <div class="stat-divider"></div>
   <div class="stat-item">
-    <div class="stat-number">+4</div>
+    <div class="stat-number">+5</div>
     <div class="stat-label">Años</div>
   </div>
 </div>
@@ -784,26 +789,30 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
 <section id="clientes">
   <p class="section-eyebrow-plain">Nuestros Clientes</p>
   <div class="marquee">
-    <ul class="marquee__content">
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-1.webp" alt="Logo Biblioteca PUCE"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-2.webp" alt="Logo Mundiflowers"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-3.webp" alt="Logo UE Verbo"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-4.webp" alt="Logo Upwear"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-5.webp" alt="Logo Libertadores de América"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-6.webp" alt="Logo GOAT"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-7.webp" alt="Logo Buenavista Bread"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-8.webp" alt="Logo Terjamanco"></li>
-    </ul>
-    <ul class="marquee__content" aria-hidden="true">
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-1.webp" alt="Logo Biblioteca PUCE"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-2.webp" alt="Logo Mundiflowers"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-3.webp" alt="Logo UE Verbo"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-4.webp" alt="Logo Upwear"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-5.webp" alt="Logo Libertadores de América"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-6.webp" alt="Logo GOAT"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-7.webp" alt="Logo Buenavista Bread"></li>
-      <li><img class="client-logo" src="assets/img/index/clientes/Cliente-8.webp" alt="Logo Terjamanco"></li>
-    </ul>
+    <div class="marquee__track">
+      <ul class="marquee__content">
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-1.webp" alt="Logo Biblioteca PUCE"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-2.webp" alt="Logo Mundiflowers"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-3.webp" alt="Logo UE Verbo"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-4.webp" alt="Logo Upwear"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-5.webp" alt="Logo Libertadores de América"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-6.webp" alt="Logo GOAT"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-7.webp" alt="Logo Buenavista Bread"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-8.webp" alt="Logo Club Sport Norte América"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-9.webp" alt="Logo Hogar Para Sus niños"></li>
+      </ul>
+      <ul class="marquee__content" aria-hidden="true">
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-1.webp" alt="Logo Biblioteca PUCE"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-2.webp" alt="Logo Mundiflowers"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-3.webp" alt="Logo UE Verbo"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-4.webp" alt="Logo Upwear"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-5.webp" alt="Logo Libertadores de América"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-6.webp" alt="Logo GOAT"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-7.webp" alt="Logo Buenavista Bread"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-8.webp" alt="Logo Terjamanco"></li>
+        <li><img class="client-logo" src="assets/img/index/clientes/Cliente-9.webp" alt="Logo Hogar Para Sus niños"></li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -1015,26 +1024,19 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
   </div>
 </section>
 
-<!-- QF -->
-<section id="qf">
-  <div class="qf-grid">
-    <div>
-      <div class="section-label">Alianza Estratégica</div>
-      <h2 class="section-title-lg" style="margin-bottom:18px">QF Producciones</h2>
-      <p class="qf-desc">Junto a <strong style="color:var(--white)">QF Producciones</strong> elevamos cada producción a estándares de broadcast, con expertise promocional y cobertura completa del evento.</p>
-      <ul class="qf-features">
-        <li>Lanzamientos de marca <span>Acompañamiento, impacto promocional y cobertura completa del evento.</span></li>
-        <li>Cobertura de eventos <span>Producción audiovisual y contenido same-day para redes.</span></li>
-        <li>Producción de Podcast <span>Grabación técnica, edición profesional y distribución estratégica.</span></li>
-      </ul>
-      <div class="qf-btns">
-        <a href="#contacto" class="btn-primary">Deseo Cotizar</a>
-        <a href="https://qfproduccionesec.online/" target="_blank" rel="noopener noreferrer" class="btn-outline">
-          QF Producciones
-        </a>
-      </div>
-    </div>
-    <div style="display:flex;align-items:center;justify-content:center">
+<!-- ALIANZAS E IMPACTO -->
+<section id="alianzas">
+  <div class="section-header">
+    <div class="section-label">Alianzas e Impacto</div>
+    <h2 class="section-title-lg">Más Allá<span class="accent"> del Set</span></h2>
+    <p class="section-desc">Las relaciones y causas que sostenemos fuera de cámara: una alianza estratégica, un patrocinio con propósito y nuestro propio proyecto de responsabilidad social.</p>
+  </div>
+  <div class="alliance-grid">
+
+    <!-- QF Producciones -->
+    <div class="alliance-card">
+      <span class="alliance-tag">Alianza Estratégica</span>
+      <h3 class="alliance-title">QF Producciones</h3>
       <div class="qf-badge">
         <span class="badge-small">Alianza</span>
         <div class="badge-names">Huna</div>
@@ -1042,7 +1044,35 @@ footer { background: #ffffff; padding: 22px 60px; text-align: center; font-size:
         <div class="badge-names">QF</div>
         <div class="badge-year">Desde 2025</div>
       </div>
+      <p class="alliance-desc">Elevamos cada producción a estándares de broadcast, con expertise promocional y cobertura completa del evento.</p>
+      <div class="alliance-btns">
+        <a href="projects/qfhuna.html" class="btn-outline">Mira los Trabajos</a>
+      </div>
     </div>
+
+    <!-- Lucha Libre Ecuador -->
+    <div class="alliance-card">
+      <span class="alliance-tag">Patrocinio</span>
+      <h3 class="alliance-title">Lucha Libre Ecuador</h3>
+      <div class="alliance-logo-wrap">
+        <img class="alliance-logo" src="assets/img/index/logo-lucha-libre-ecuador.webp" alt="Logo Lucha Libre Ecuador" loading="lazy">
+      </div>
+      <p class="alliance-desc">Nuestro único patrocinio: una promotora de lucha libre ecuatoriana que también es escuela comunitaria gratuita y motor de proyectos sociales.</p>
+      <div class="alliance-btns">
+        <a href="https://luchalibreecuador.com/" target="_blank" rel="noopener noreferrer" class="alliance-link">Lucha Libre Ecuador <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+
+    <!-- Responsabilidad Social -->
+    <div class="alliance-card">
+      <span class="alliance-tag">Compromiso Social</span>
+      <h3 class="alliance-title">Responsabilidad Social</h3>
+      <p class="alliance-desc">Enseñamos y asesoramos en marketing, sin costo, a comunidades y negocios que dependen enteramente de su actividad para vivir.</p>
+      <div class="alliance-btns">
+        <a href="social.html" class="btn-outline">Conoce el Proyecto</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
